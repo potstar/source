@@ -347,6 +347,46 @@ const WebRouter=[
     }
   ]
   },
+  {
+    path: '/dev-tools',
+    component: Layout,
+    name: 'DevTools',
+    title: '开发人员工具',
+    icon: 'dev',
+    children: [
+      {
+        path: 'form-designer',
+        name: 'FormDesigner',
+        component: null,
+        meta: { title: '表单设计' },
+      },
+      {
+        path: 'table-designer',
+        name: 'TableDesigner',
+        component: null,
+        meta: { title: '表格设计' },
+      },
+      {
+        path: 'dict-type',
+        name: 'DictType',
+        component: null,
+        meta: { title: '字典类型管理' },
+      },
+      {
+        path: 'dict',
+        name: 'Dict',
+        component: null,
+        meta: { title: '字典管理' },
+      },
+      {
+        path: 'log',
+        name: 'Log',
+        component: null,
+        meta: { title: '系统日志' },
+      },
+
+    ],
+  },
   // {
   //   path:'/dashboard',
   //   component:Layout,

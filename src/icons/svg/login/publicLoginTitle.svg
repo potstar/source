@@ -1,0 +1,25 @@
+<!-- 
+    * @Author: potstar 
+ * @Date: 2020-02-15 16:56:08 
+ * @Last Modified by:   potstar 
+ * @Last Modified time: 2020-02-15 16:56:08  
+ -->
+
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//w3c//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="673px" height="60px">
+     <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="100%">
+         <stop stop-color="rgb(255, 255,255)" offset="30%" />
+         <stop stop-color="rgb(157,166,173)" offset="100%"/>
+     </linearGradient>
+     <defs>
+         <filter if="f1" x="0" y="0" width="110%" height="110%">
+             <feoffset result="offout" in="SourceAlpha" dx="1" dy="1" />
+             <feGaussianBlur result="blurOut" in="offOut" stdDeviation="1" />
+             <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+         </filter>
+     </defs>
+     <text color="white" fill="url(#gradient)" filter="url(#f1)" text-anchor="start" x="0" y="53px" font-size="60px" font-family="\5B8B\4F53" font-weight="blod">
+     uyuuuuu
+     </text>
+</svg>

@@ -2,6 +2,7 @@ import router from './router.js';
 import store from './store';
 
 router.beforeEach((to,from,next)=>{
+    console.log(store.getters.token);
     if(store.getters.token){
         if(store.getters.addRouters.length===0){
             store.dispatch('generateRoutes').then(

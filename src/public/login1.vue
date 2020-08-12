@@ -3,7 +3,7 @@
  * @Author: potstar 
  * @Date: 2020-02-15 16:02:43 
  * @Last Modified by: potstar
- * @Last Modified time: 2020-03-15 18:42:08
+ * @Last Modified time: 2020-08-12 15:54:02
  */
 #ctrl+Alt+i 添加文件信息
 使用SVG图标，
@@ -51,6 +51,7 @@
                         </template>
                     </el-input>
                 </el-form-item>
+                <h4 class="tip">管理员admin密码admin</h4>
                 <el-form-item>
                     <el-button :loading="btnLoginIsLoading"
                                 type="primary"
@@ -158,4 +159,7 @@ export default {
         padding: 45px 60px 17px 60px;
         border-radius: 4px;
         }
+.tip{
+    color: white;
+}
 </style>

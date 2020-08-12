@@ -2,8 +2,8 @@ import axios from 'axios';
 import vue from 'vue';
 
 const service=axios.create({
-    // baseURL:'/',
-    baseURL: process.env.VUE_APP_URL,
+    baseURL:'/',
+    // baseURL: process.env.VUE_APP_URL,
     timeout:5000
 });
 

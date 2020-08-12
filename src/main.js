@@ -5,7 +5,7 @@ import router from "./router";
 import store from "./store";
 import './plugins/element.js';
 import '@/icons/autoImportSvg.js';
-// import './mock/index.js';
+import './mock/index.js';
 import './permission'
 
 Vue.prototype.axios=axios;

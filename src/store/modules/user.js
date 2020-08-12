@@ -2,7 +2,7 @@
  * @Author: potstar 
  * @Date: 2020-03-12 09:43:20 
  * @Last Modified by: potstar
- * @Last Modified time: 2020-08-04 14:47:24
+ * @Last Modified time: 2020-08-12 15:29:20
  * 用户数据存储文件
  */
 import {login, logout, getInfo} from '@/api/login'
@@ -27,8 +27,10 @@ const user={
         //登录获取token并存储
         async setTokenByLogin({commit},userInfo){
            const promise=await login(userInfo).then((res)=>{
-               commit('SET_TOKEN',res.data.data.token);
-               return res
+            //    commit('SET_TOKEN',res.data.data.token);
+            commit('SET_TOKEN',res.data.token);
+            console.log(res);
+               return res;
            })
            return promise;
         },

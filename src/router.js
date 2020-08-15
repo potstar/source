@@ -357,7 +357,7 @@ const WebRouter=[
       {
         path: 'form-designer',
         name: 'FormDesigner',
-        component: null,
+        component: import('./views/Tools/TableDesigner.vue'),
         meta: { title: '表单设计' },
       },
       {
